@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ILQ2OX_konferencia>
+<OP9WRO_konferencia>
     <konferencia>
-        <cím id="cyber">AI in Cyber Security</cím>
-        <helyszín>Los Angeles</helyszín>
-        <dátum>2027.01.05</dátum>
+        <cím id="robotika">Robotika és mesterséges intelligencia</cím>
+        <helyszín>Prága</helyszín>
+        <dátum>2027.02.12</dátum>
         <előadó>
-            <név>Dr. Nicolaus Hans</név>
-            <adószám>DE123456789</adószám>
-            <lakcím>Friedrichstraße 47, 10117 Berlin</lakcím>
+            <név>Dr. Markus Schneider</név>
+            <adószám>CZ456789123</adószám>
+            <lakcím>Václavská 18, 110 00 Praha</lakcím>
         </előadó>
         <hallgatók>
-            <hallgató id="H001">
-                <név>Kovács Péter</név>
-                <lakcím>Kossuth Lajos utca 12., 1053 Budapest</lakcím>
+            <hallgató id="H101">
+                <név>Horváth Balázs</név>
+                <lakcím>Petőfi utca 21., 1117 Budapest</lakcím>
             </hallgató>
-            <hallgató id="H002">
-                <név>Szabó Anna</név>
-                <lakcím>Petőfi Sándor utca 3., 4024 Debrecen</lakcím>
+            <hallgató id="H102">
+                <név>Kiss Lilla</név>
+                <lakcím>Arany János utca 8., 7621 Pécs</lakcím>
             </hallgató>
         </hallgatók>
     </konferencia>
+
     <konferencia>
-        <cím id="kvantum">Kvantumszámítástechnika az iparban</cím>
-        <helyszín>Budapest</helyszín>
-        <dátum>2027.03.18</dátum>
+        <cím id="biotech">Biotechnológia és modern orvostudomány</cím>
+        <helyszín>Varsó</helyszín>
+        <dátum>2027.04.24</dátum>
         <előadó>
-            <név>Dr. Horváth Gábor</név>
-            <adószám>HU987654321</adószám>
-            <lakcím>Andrássy út 22., 1061 Budapest</lakcím>
+            <név>Dr. Elena Kovács</név>
+            <adószám>PL741258963</adószám>
+            <lakcím>Nowy Świat 32, 00-029 Warszawa</lakcím>
         </előadó>
         <hallgatók>
-            <hallgató id="H003">
-                <név>Nagy Eszter</név>
-                <lakcím>Rákóczi út 7., 3525 Miskolc</lakcím>
+            <hallgató id="H103">
+                <név>Simon Dóra</név>
+                <lakcím>Béke utca 14., 6720 Szeged</lakcím>
             </hallgató>
-            <hallgató id="H004">
-                <név>Tóth Márton</név>
-                <lakcím>Fő utca 45., 9021 Győr</lakcím>
+            <hallgató id="H104">
+                <név>Oláh Márk</név>
+                <lakcím>Petőfi tér 6., 8000 Székesfehérvár</lakcím>
             </hallgató>
         </hallgatók>
     </konferencia>
-</ILQ2OX_konferencia>
+</OP9WRO_konferencia>
