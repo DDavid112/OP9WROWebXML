@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE OP9WRO_orarend PUBLIC "OP9WRO_orarend" "OP9WRO_orarend.dtd">
+
+<OP9WRO_orarend>
+        <ora id="o01" tipus="Elmélet">
+            <targy>Elektronika és Elektrotechnika</targy>
+            <idopont>
+                <nap>Hétfő</nap>
+                <tol>8:00</tol>
+                <ig>10:00</ig>
+            </idopont>
+            <helyszin>III. Előadó</helyszin>
+            <oktato>Szabó Norbert István</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+
+        <ora id="o02" tipus="Elmélet">
+            <targy>Web technológiák 1.</targy>
+            <idopont>
+                <nap>Hétfő</nap>
+                <tol>10:00</tol>
+                <ig>12:00</ig>
+            </idopont>
+            <helyszin>V. Előadó</helyszin>
+            <oktato>Dr. Agárdi Anita</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+
+        <ora id="o03" tipus="Szeminárium">
+            <targy>Angol műszaki szaknyelv</targy>
+            <idopont>
+                <nap>Hétfő</nap>
+                <tol>12:00</tol>
+                <ig>14:00</ig>
+            </idopont>
+            <helyszin>A1/314</helyszin>
+            <oktato>Nagyné Varga Orsolya</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+
+
+        <ora id="o04" tipus="Gyakorlat">
+            <targy>Web technológiák 1.</targy>
+            <idopont>
+                <nap>Hétfő</nap>
+                <tol>14:00</tol>
+                <ig>16:00</ig>
+            </idopont>
+            <helyszin>ln/101</helyszin>
+            <oktato>Dr. Agárdi Anita</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+
+        <ora id="o05" tipus="Elmélet">
+            <targy>Mobil Programozás Alapok</targy>
+            <idopont>
+                <nap>Hétfő</nap>
+                <tol>16:00</tol>
+                <ig>18:00</ig>
+            </idopont>
+            <helyszin>ln/101</helyszin>
+            <oktato>Dr. Agárdi Anita</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+
+        <ora id="o06" tipus="Gyakorlat">
+            <targy>Mobil Programozás Alapok</targy>
+            <idopont>
+                <nap>Hétfő</nap>
+                <tol>18:00</tol>
+                <ig>20:00</ig>
+            </idopont>
+            <helyszin>ln/101</helyszin>
+            <oktato>Dr. Agárdi Anita</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+
+        <ora id="o07" tipus="Gyakorlat">
+            <targy>Mesterséges Intelligencia Alapok</targy>
+            <idopont>
+                <nap>Kedd</nap>
+                <tol>8:00</tol>
+                <ig>10:00</ig>
+            </idopont>
+            <helyszin>XXXII. Előadó</helyszin>
+            <oktato>Kunné Dr. Tamás Judit</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+        
+        <ora id="o08" tipus="Elmélet">
+            <targy>Mesterséges Intelligencia Alapok</targy>
+            <idopont>
+                <nap>Kedd</nap>
+                <tol>10:00</tol>
+                <ig>12:00</ig>
+            </idopont>
+            <helyszin>XXXIII. Előadó</helyszin>
+            <oktato>Kunné Dr. Tamás Judit</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+        
+
+        <ora id="o09" tipus="Elmélet">
+            <targy>Windows Rendszergazda</targy>
+            <idopont>
+                <nap>Kedd</nap>
+                <tol>16:00</tol>
+                <ig>18:00</ig>
+            </idopont>
+            <helyszin>ln/103</helyszin>
+            <oktato>Huszák Péter</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+        
+
+        <ora id="o10" tipus="Gyakorlat">
+            <targy>Windows Rendszergazda</targy>
+            <idopont>
+                <nap>Kedd</nap>
+                <tol>18:00</tol>
+                <ig>20:00</ig>
+            </idopont>
+            <helyszin>ln/103</helyszin>
+            <oktato>Huszák Péter</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+        
+
+        <ora id="o11" tipus="Elmélet">
+            <targy>Webes Adatkezező Környezetek</targy>
+            <idopont>
+                <nap>Szerda</nap>
+                <tol>8:00</tol>
+                <ig>10:00</ig>
+            </idopont>
+            <helyszin>ln/202</helyszin>
+            <oktato>Dr. Kovács László József</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+
+        <ora id="o12" tipus="Gyakorlat">
+            <targy>Webes Adatkezező Környezetek</targy>
+            <idopont>
+                <nap>Szerda</nap>
+                <tol>12:00</tol>
+                <ig>14:00</ig>
+            </idopont>
+            <helyszin>ln/101</helyszin>
+            <oktato>Dr. Bednarik László</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+
+
+        <ora id="o13" tipus="Gyakorlat">
+            <targy>Elektronika és Elektrotechnika</targy>
+            <idopont>
+                <nap>Csütörtök</nap>
+                <tol>12:00</tol>
+                <ig>14:00</ig>
+            </idopont>
+            <helyszin>A1/316</helyszin>
+            <oktato>Szabó Norbert István</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </ora>
+
+
+</OP9WRO_orarend>
