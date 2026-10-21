@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OP9WRO_vendeglatas xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+                    xsi:noNamespaceSchemaLocation="OP9WRO_XMLSchema.xsd">
+
+<!--Ettermek-->
+<etterem ekod="e1">
+    <nev>Trófea</nev>
+    <cim>
+        <varos>Budapest</varos>
+        <utca>Visegrádi</utca>
+        <hazszam>4</hazszam>
+    </cim>
+    <csillag>4</csillag>
+</etterem>
+
+<etterem ekod="e2">
+    <nev>Gundel</nev>
+    <cim>
+        <varos>Budapest</varos>
+        <utca>Gundel Károly</utca>
+        <hazszam>16</hazszam>
+    </cim>
+    <csillag>5</csillag>
+</etterem>
+
+<foszakacs fkod="f1" e_f="e1">
+    <nev>Kovács Géza</nev>
+    <eletkor>34</eletkor>
+    <vegzettseg>Le Cordon Bleu</vegzettseg>
+</foszakacs>
+
+<foszakacs fkod="f2" e_f="e2">
+    <nev>Papp Győző</nev>
+    <eletkor>41</eletkor>
+    <vegzettseg>Szakközépsikola</vegzettseg>
+     <vegzettseg>Le Cordon Bleu</vegzettseg>
+</foszakacs>
+
+
+<szakacs szkod="sz1" e_sz="esz1">
+    <nev>Horvát Linda</nev>
+    <reszleg>Krumplipucolás</reszleg>
+    <vegzettseg>Szakközépsikola</vegzettseg>
+</szakacs>
+
+<szakacs szkod="sz2" e_sz="esz2">
+    <nev>Lakatos Elemér</nev>
+    <reszleg>Levesek</reszleg>
+    <vegzettseg>nincs</vegzettseg>
+</szakacs>
+
+<szakacs szkod="sz3" e_sz="esz3">
+    <nev>Melon Musk</nev>
+    <reszleg>Mártások készítése</reszleg>
+    <vegzettseg>Tokaji Borászati Egyetem Mesterfok</vegzettseg>
+</szakacs>
+
+<szakacs szkod="sz4" e_sz="esz4">
+    <nev>Molnár Eszter</nev>
+    <reszleg>Húsok</reszleg>
+    <vegzettseg>Gimnázium</vegzettseg>
+    <vegzettseg>Egri Egyetem Mesterfok</vegzettseg>
+</szakacs>
+
+<gyakornok gykod="gy1" e_gy="egy1">
+    <nev>Mr.Bean</nev>
+    <muszak>Délután</muszak>
+    <gyakorlat>
+        <kezdete>2026.09.12</kezdete>
+        <idotartama>9 hónap</idotartama>
+    </gyakorlat>
+</gyakornok>
+
+<gyakornok gykod="gy2" e_gy="egy3">
+    <nev>Kiss Tünde</nev>
+    <muszak>Délelőtt</muszak>
+    <gyakorlat>
+        <kezdete>2026.07.18</kezdete>
+        <idotartama>10 hónap</idotartama>
+    </gyakorlat>
+</gyakornok>
+
+<vendeg vkod="v1">
+    <nev>Fehér Ferenc</nev>
+    <eletkor>56</eletkor>
+    <cim>
+        <varos>Mezőkövesd</varos>
+        <utca>Petőfi Sándor</utca>
+        <hazszam>48</hazszam>
+    </cim>
+</vendeg>
+
+<vendeg vkod="v2">
+    <nev>Mia Khalifa</nev>
+    <eletkor>32</eletkor>
+    <cim>
+        <varos>Tel Aviv</varos>
+        <utca>Big Yahu</utca>
+        <hazszam>19</hazszam>
+    </cim>
+</vendeg>
+
+<vendeg vkod="v3">
+    <nev>Tóth Tibor</nev>
+    <eletkor>15</eletkor>
+    <cim>
+        <varos>Veszprém</varos>
+        <utca>Kossuth Lajos</utca>
+        <hazszam>23</hazszam>
+    </cim>
+</vendeg>
+
+<rendeles e_v_v="e1" e_v_e="v1">
+    <osszeg>21325</osszeg>
+    <etel>Harcsapaprikás</etel>
+</rendeles>
+
+<rendeles e_v_v="e2" e_v_e="v2">
+    <osszeg>9990</osszeg>
+    <etel>Töltött Káposzta</etel>
+</rendeles>
+
+
+<rendeles e_v_v="e1" e_v_e="v2">
+    <osszeg>6700</osszeg>
+    <etel>Rántott Karfiol Kuszkusszal</etel>
+</rendeles>
+
+<rendeles e_v_v="e2" e_v_e="v3">
+    <osszeg>299</osszeg>
+    <etel>Mackó Sajt</etel>
+</rendeles>
+
+
+</OP9WRO_vendeglatas>
