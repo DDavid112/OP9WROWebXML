@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<OP9WRO_barackos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OP9WRO_XMLSchema.xsd">
+
+    <Termelo termelo_id="tr_01">
+        <nev>Nagy Elemér</nev>
+        <dolgozok_szama>4</dolgozok_szama>
+        <elerhetoseg>
+            <telefonszam>+36 30 325 2362</telefonszam>
+            <email>nagy.elemer@gmail.com</email>
+        </elerhetoseg>
+    </Termelo>
+    <Termelo termelo_id="tr_02">
+        <nev>Kecskeméti Gyümölcs Kft.</nev>
+        <dolgozok_szama>12</dolgozok_szama>
+        <elerhetoseg>
+            <telefonszam>+36 30 555 210</telefonszam>
+            <email>info@kecskemetigyumolcs.hu</email>
+        </elerhetoseg>
+    </Termelo>
+
+    <Fold helyrajzi_szam="0452/3" termelo_id="tr_01">
+        <terulet_ha>3</terulet_ha>
+        <koordinatak>
+            <szelesseg>46</szelesseg>
+            <hosszusag>19</hosszusag>
+        </koordinatak>
+    </Fold>
+    <Fold helyrajzi_szam="0452/7" termelo_id="tr_01">
+        <terulet_ha>2</terulet_ha>
+        <koordinatak>
+            <szelesseg>37</szelesseg>
+            <hosszusag>15</hosszusag>
+        </koordinatak>
+    </Fold>
+    <Fold helyrajzi_szam="1123/1" termelo_id="tr_02">
+        <terulet_ha>4</terulet_ha>
+        <koordinatak>
+            <szelesseg>51</szelesseg>
+            <hosszusag>21</hosszusag>
+        </koordinatak>
+    </Fold>
+
+    <Terem helyrajzi_szam="0452/3" fajta_id="bf_01">
+        <ultetett_fak_szama>700</ultetett_fak_szama>
+    </Terem>
+    <Terem helyrajzi_szam="0452/3" fajta_id="bf_02">
+        <ultetett_fak_szama>550</ultetett_fak_szama>
+    </Terem>
+    <Terem helyrajzi_szam="0452/7" fajta_id="bf_03">
+        <ultetett_fak_szama>800</ultetett_fak_szama>
+    </Terem>
+    <Terem helyrajzi_szam="1123/1" fajta_id="bf_01">
+        <ultetett_fak_szama>1100</ultetett_fak_szama>
+    </Terem>
+    <Terem helyrajzi_szam="1123/1" fajta_id="bf_02">
+        <ultetett_fak_szama>900</ultetett_fak_szama>
+    </Terem>
+
+    <Szuret szuret_id="sz_01" helyrajzi_szam="0452/3" fajta_id="bf_01" raktar_id="r_01">
+        <datum>2026-07-14</datum>
+        <mennyiseg_kg>3200</mennyiseg_kg>
+    </Szuret>
+    <Szuret szuret_id="sz_02" helyrajzi_szam="1123/1" fajta_id="bf_01" raktar_id="r_02">
+        <datum>2026-07-16</datum>
+        <mennyiseg_kg>5100</mennyiseg_kg>
+    </Szuret>
+    <Szuret szuret_id="sz_03" helyrajzi_szam="0452/7" fajta_id="bf_03" raktar_id="r_01">
+        <datum>2026-07-25</datum>
+        <mennyiseg_kg>4300</mennyiseg_kg>
+    </Szuret>
+    <Szuret szuret_id="sz_04" helyrajzi_szam="1123/1" fajta_id="bf_02" raktar_id="r_02">
+        <datum>2026-08-06</datum>
+        <mennyiseg_kg>4800</mennyiseg_kg>
+    </Szuret>
+
+    <Raktar raktar_id="r_01">
+        <cim>6000 Kecskemét, Szolnoki út 42.</cim>
+        <hutok_szama>3</hutok_szama>
+        <befogadokepesseg_kg>20000</befogadokepesseg_kg>
+    </Raktar>
+    <Raktar raktar_id="r_02">
+        <cim>6000 Kecskemét, Ipari park 7.</cim>
+        <hutok_szama>6</hutok_szama>
+        <befogadokepesseg_kg>45000</befogadokepesseg_kg>
+    </Raktar>
+
+    <Barackfajta fajta_id="bf_01">
+        <nev>Jumbo</nev>
+        <eresi_ido>július közepe</eresi_ido>
+    </Barackfajta>
+    <Barackfajta fajta_id="bf_02">
+        <nev>Őszi</nev>
+        <eresi_ido>szeptember</eresi_ido>
+    </Barackfajta>
+    <Barackfajta fajta_id="bf_03">
+        <nev>Ceglédi óriási</nev>
+        <eresi_ido>július vége</eresi_ido>
+    </Barackfajta>
+
+    <Vasarlas vasarlas_id="va_01" fajta_id="bf_01" termelo_id="tr_01" vasarlo_id="vo_01">
+        <datum>2026-07-15</datum>
+        <mennyiseg_kg>1500</mennyiseg_kg>
+        <fizetett_osszeg>900000</fizetett_osszeg>
+        <egysegar>600</egysegar>
+    </Vasarlas>
+    <Vasarlas vasarlas_id="va_02" fajta_id="bf_01" termelo_id="tr_02" vasarlo_id="vo_03">
+        <datum>2026-07-17</datum>
+        <mennyiseg_kg>3000</mennyiseg_kg>
+        <fizetett_osszeg>1650000</fizetett_osszeg>
+        <egysegar>550</egysegar>
+    </Vasarlas>
+    <Vasarlas vasarlas_id="va_03" fajta_id="bf_03" termelo_id="tr_01" vasarlo_id="vo_02">
+        <datum>2026-07-26</datum>
+        <mennyiseg_kg>50</mennyiseg_kg>
+        <fizetett_osszeg>40000</fizetett_osszeg>
+        <egysegar>800</egysegar>
+    </Vasarlas>
+    <Vasarlas vasarlas_id="va_04" fajta_id="bf_02" termelo_id="tr_02" vasarlo_id="vo_01">
+        <datum>2026-08-07</datum>
+        <mennyiseg_kg>2000</mennyiseg_kg>
+        <fizetett_osszeg>1300000</fizetett_osszeg>
+        <egysegar>650</egysegar>
+    </Vasarlas>
+
+    <Vasarlo vasarlo_id="vo_01">
+        <nev>Friss Gyümölcs Kft.</nev>
+        <email>frissgyumolcs@gmail.com</email>
+        <telefonszam>+36 30 235 6343</telefonszam>
+        <telefonszam>+36 30 257 7346</telefonszam>
+        <lakcim>
+            <iranyitoszam>1097</iranyitoszam>
+            <telepules>Budapest</telepules>
+            <utca_hazszam>Petőfi Sándor utca 16</utca_hazszam>
+        </lakcim>
+    </Vasarlo>
+    <Vasarlo vasarlo_id="vo_02">
+        <nev>Szabó Mária</nev>
+        <email>szabomaria@gmail.com</email>
+        <telefonszam>+36 30 515 2626</telefonszam>
+        <lakcim>
+            <iranyitoszam>6000</iranyitoszam>
+            <telepules>Kecskemét</telepules>
+            <utca_hazszam>Rákóczi Ferenc út 18.</utca_hazszam>
+        </lakcim>
+    </Vasarlo>
+    <Vasarlo vasarlo_id="vo_03">
+        <nev>Abaúj Gyümölcs Nagyker Zrt.</nev>
+        <email>agyumolcsnagyker@gmail.com</email>
+        <telefonszam>+36 30 414 2362</telefonszam>
+        <telefonszam>+36 30 512 6123</telefonszam>
+        <lakcim>
+            <iranyitoszam>6100</iranyitoszam>
+            <telepules>Kiskunfélegyháza</telepules>
+            <utca_hazszam>Szegedi út 60.</utca_hazszam>
+        </lakcim>
+    </Vasarlo>
+
+</OP9WRO_barackos>
