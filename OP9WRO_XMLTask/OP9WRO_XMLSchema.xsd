@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="OP9WRO_barackos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Termelo" type="termeloTipus" maxOccurs="unbounded"/>
+                <xs:element name="Fold" type="foldTipus" maxOccurs="unbounded"/>
+                <xs:element name="Terem" type="teremTipus" maxOccurs="unbounded"/>
+                <xs:element name="Szuret" type="szuretTipus" maxOccurs="unbounded"/>
+                <xs:element name="Raktar" type="raktarTipus" maxOccurs="unbounded"/>
+                <xs:element name="Barackfajta" type="barackfajtaTipus" maxOccurs="unbounded"/>
+                <xs:element name="Vasarlas" type="vasarlasTipus" maxOccurs="unbounded"/>
+                <xs:element name="Vasarlo" type="vasarloTipus" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:key name="termelo_kulcs">
+            <xs:selector xpath="Termelo"/>
+            <xs:field xpath="@termelo_id"/>
+        </xs:key>
+        <xs:key name="fold_kulcs">
+            <xs:selector xpath="Fold"/>
+            <xs:field xpath="@helyrajzi_szam"/>
+        </xs:key>
+        <xs:key name="szuret_kulcs">
+            <xs:selector xpath="Szuret"/>
+            <xs:field xpath="@szuret_id"/>
+        </xs:key>
+        <xs:key name="raktar_kulcs">
+            <xs:selector xpath="Raktar"/>
+            <xs:field xpath="@raktar_id"/>
+        </xs:key>
+        <xs:key name="barackfajta_kulcs">
+            <xs:selector xpath="Barackfajta"/>
+            <xs:field xpath="@fajta_id"/>
+        </xs:key>
+        <xs:key name="vasarlas_kulcs">
+            <xs:selector xpath="Vasarlas"/>
+            <xs:field xpath="@vasarlas_id"/>
+        </xs:key>
+        <xs:key name="vasarlo_kulcs">
+            <xs:selector xpath="Vasarlo"/>
+            <xs:field xpath="@vasarlo_id"/>
+        </xs:key>
+
+        <xs:key name="terem_kulcs">
+            <xs:selector xpath="Terem"/>
+            <xs:field xpath="@helyrajzi_szam"/>
+            <xs:field xpath="@fajta_id"/>
+        </xs:key>
+
+        <xs:keyref refer="termelo_kulcs" name="fold_termelo_idegen_kulcs">
+            <xs:selector xpath="Fold"/>
+            <xs:field xpath="@termelo_id"/>
+        </xs:keyref>
+
+        <xs:keyref refer="fold_kulcs" name="terem_fold_idegen_kulcs">
+            <xs:selector xpath="Terem"/>
+            <xs:field xpath="@helyrajzi_szam"/>
+        </xs:keyref>
+        <xs:keyref refer="barackfajta_kulcs" name="terem_fajta_idegen_kulcs">
+            <xs:selector xpath="Terem"/>
+            <xs:field xpath="@fajta_id"/>
+        </xs:keyref>
+
+        <xs:keyref refer="fold_kulcs" name="szuret_fold_idegen_kulcs">
+            <xs:selector xpath="Szuret"/>
+            <xs:field xpath="@helyrajzi_szam"/>
+        </xs:keyref>
+        <xs:keyref refer="barackfajta_kulcs" name="szuret_fajta_idegen_kulcs">
+            <xs:selector xpath="Szuret"/>
+            <xs:field xpath="@fajta_id"/>
+        </xs:keyref>
+        <xs:keyref refer="raktar_kulcs" name="szuret_raktar_idegen_kulcs">
+            <xs:selector xpath="Szuret"/>
+            <xs:field xpath="@raktar_id"/>
+        </xs:keyref>
+
+        <xs:keyref refer="barackfajta_kulcs" name="vasarlas_fajta_idegen_kulcs">
+            <xs:selector xpath="Vasarlas"/>
+            <xs:field xpath="@fajta_id"/>
+        </xs:keyref>
+        <xs:keyref refer="termelo_kulcs" name="vasarlas_termelo_idegen_kulcs">
+            <xs:selector xpath="Vasarlas"/>
+            <xs:field xpath="@termelo_id"/>
+        </xs:keyref>
+        <xs:keyref refer="vasarlo_kulcs" name="vasarlas_vasarlo_idegen_kulcs">
+            <xs:selector xpath="Vasarlas"/>
+            <xs:field xpath="@vasarlo_id"/>
+        </xs:keyref>
+    </xs:element>
+
+    <xs:element name="nev" type="xs:string"/>
+    <xs:element name="datum" type="xs:date"/>
+    <xs:element name="mennyiseg_kg" type="kgTipus"/>
+    <xs:element name="telefonszam" type="telefonTipus"/>
+    <xs:element name="email" type="emailTipus"/>
+
+    <xs:complexType name="termeloTipus">
+        <xs:sequence>
+            <xs:element ref="nev"/>
+            <xs:element name="dolgozok_szama" type="xs:nonNegativeInteger"/>
+            <xs:element name="elerhetoseg" type="elerhetosegTipus"/>
+        </xs:sequence>
+        <xs:attribute name="termelo_id" type="termeloIdTipus" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="elerhetosegTipus">
+        <xs:sequence>
+            <xs:element ref="telefonszam"/>
+            <xs:element ref="email"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="foldTipus">
+        <xs:sequence>
+            <xs:element name="terulet_ha" type="teruletTipus"/>
+            <xs:element name="koordinatak" type="koordinatakTipus"/>
+        </xs:sequence>
+        <xs:attribute name="helyrajzi_szam" type="helyrajziSzamTipus" use="required"/>
+        <xs:attribute name="termelo_id" type="termeloIdTipus" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="koordinatakTipus">
+        <xs:sequence>
+            <xs:element name="szelesseg" type="szelessegTipus"/>
+            <xs:element name="hosszusag" type="hosszusagTipus"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="teremTipus">
+        <xs:sequence>
+            <xs:element name="ultetett_fak_szama" type="xs:positiveInteger"/>
+        </xs:sequence>
+        <xs:attribute name="helyrajzi_szam" type="helyrajziSzamTipus" use="required"/>
+        <xs:attribute name="fajta_id" type="fajtaIdTipus" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="szuretTipus">
+        <xs:sequence>
+            <xs:element ref="datum"/>
+            <xs:element ref="mennyiseg_kg"/>
+        </xs:sequence>
+        <xs:attribute name="szuret_id" type="szuretIdTipus" use="required"/>
+        <xs:attribute name="helyrajzi_szam" type="helyrajziSzamTipus" use="required"/>
+        <xs:attribute name="fajta_id" type="fajtaIdTipus" use="required"/>
+        <xs:attribute name="raktar_id" type="raktarIdTipus" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="raktarTipus">
+        <xs:sequence>
+            <xs:element name="cim" type="xs:string"/>
+            <xs:element name="hutok_szama" type="xs:nonNegativeInteger"/>
+            <xs:element name="befogadokepesseg_kg" type="kgTipus"/>
+        </xs:sequence>
+        <xs:attribute name="raktar_id" type="raktarIdTipus" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="barackfajtaTipus">
+        <xs:all>
+            <xs:element ref="nev"/>
+            <xs:element name="eresi_ido" type="xs:string"/>
+        </xs:all>
+        <xs:attribute name="fajta_id" type="fajtaIdTipus" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="vasarlasTipus">
+        <xs:sequence>
+            <xs:element ref="datum"/>
+            <xs:element ref="mennyiseg_kg"/>
+            <xs:element name="fizetett_osszeg" type="osszegTipus"/>
+            <xs:element name="egysegar" type="osszegTipus"/>
+        </xs:sequence>
+        <xs:attribute name="vasarlas_id" type="vasarlasIdTipus" use="required"/>
+        <xs:attribute name="fajta_id" type="fajtaIdTipus" use="required"/>
+        <xs:attribute name="termelo_id" type="termeloIdTipus" use="required"/>
+        <xs:attribute name="vasarlo_id" type="vasarloIdTipus" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="vasarloTipus">
+        <xs:sequence>
+            <xs:element ref="nev"/>
+            <xs:element ref="email"/>
+            <xs:element ref="telefonszam" maxOccurs="unbounded"/>
+            <xs:element name="lakcim" type="lakcimTipus"/>
+        </xs:sequence>
+        <xs:attribute name="vasarlo_id" type="vasarloIdTipus" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="lakcimTipus">
+        <xs:sequence>
+            <xs:element name="iranyitoszam" type="iranyitoszamTipus"/>
+            <xs:element name="telepules" type="xs:string"/>
+            <xs:element name="utca_hazszam" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="termeloIdTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="tr_\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="szuretIdTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="sz_\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="raktarIdTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="r_\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="fajtaIdTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="bf_\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="vasarlasIdTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="va_\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="vasarloIdTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="vo_\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="helyrajziSzamTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}/\d+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="kgTipus">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="1000000"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="osszegTipus">
+        <xs:restriction base="xs:nonNegativeInteger"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="teruletTipus">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="szelessegTipus">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="-100"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="hosszusagTipus">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="-100"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="telefonTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\+36 \d{2} \d{3} \d{3,4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="emailTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@\s]+@[^@\s]+\.[a-z]{2,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="iranyitoszamTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
