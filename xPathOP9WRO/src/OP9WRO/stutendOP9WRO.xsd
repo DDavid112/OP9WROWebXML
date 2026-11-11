@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="hallgatok">
+        <xs:complexType>
+            <xs:sequence>
+                 <xs:element name="hallgato" maxOccurs="unbounded" minOccurs="0"/>
+                 <xs:complexType>
+                     <xs:sequence>
+                         <xs:element type="xs:string" name="keresztnev"/>
+                         <xs:element type="xs:string" name="vezeteknev"/>
+                         <xs:element type="xs:string" name="foglalkozas"/>
+                     </xs:sequence>
+                     <xs:attribute name="id" type="xs:int" use="optional"/>
+                 </xs:complexType>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
