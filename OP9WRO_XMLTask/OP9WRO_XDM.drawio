@@ -4,28 +4,28 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="x1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Termelo" vertex="1">
+        <mxCell id="x1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Termelő" vertex="1">
           <mxGeometry height="60" width="150" x="222.5" y="400" as="geometry" />
         </mxCell>
-        <mxCell id="x2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="termelo_id" vertex="1">
+        <mxCell id="x2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="termelő_id" vertex="1">
           <mxGeometry height="70" width="110" x="40" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="nev" vertex="1">
+        <mxCell id="x3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="név" vertex="1">
           <mxGeometry height="40" width="70" x="166" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="189" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="dolgozok_szama" vertex="1">
+        <mxCell id="x5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="dolgozók_száma" vertex="1">
           <mxGeometry height="40" width="110" x="252" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="295" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="elerhetoseg" vertex="1">
+        <mxCell id="x7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="elérhetőség" vertex="1">
           <mxGeometry height="40" width="91" x="421" y="530" as="geometry" />
         </mxCell>
-        <mxCell id="x8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="telefonszam" vertex="1">
+        <mxCell id="x8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="telefonszám" vertex="1">
           <mxGeometry height="40" width="91" x="378" y="660" as="geometry" />
         </mxCell>
         <mxCell id="x9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
@@ -37,67 +37,67 @@
         <mxCell id="x11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="508" y="720" as="geometry" />
         </mxCell>
-        <mxCell id="x12" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Fold" vertex="1">
+        <mxCell id="x12" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Föld" vertex="1">
           <mxGeometry height="60" width="150" x="814" y="400" as="geometry" />
         </mxCell>
-        <mxCell id="x13" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;termelo_id&lt;/span&gt;" vertex="1">
+        <mxCell id="x13" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;termelő_id&lt;/span&gt;" vertex="1">
           <mxGeometry height="70" width="110" x="615" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x14" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="terulet_ha" vertex="1">
+        <mxCell id="x14" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="terület_ha" vertex="1">
           <mxGeometry height="40" width="84" x="741" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="771" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x16" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="koordinatak" vertex="1">
+        <mxCell id="x16" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="koordináták" vertex="1">
           <mxGeometry height="40" width="91" x="880.5" y="530" as="geometry" />
         </mxCell>
-        <mxCell id="x17" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="szelesseg" vertex="1">
+        <mxCell id="x17" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="szélesség" vertex="1">
           <mxGeometry height="40" width="77" x="841" y="660" as="geometry" />
         </mxCell>
         <mxCell id="x18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="867.5" y="720" as="geometry" />
         </mxCell>
-        <mxCell id="x19" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="hosszusag" vertex="1">
+        <mxCell id="x19" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="hosszúság" vertex="1">
           <mxGeometry height="40" width="77" x="934" y="660" as="geometry" />
         </mxCell>
         <mxCell id="x20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="960.5" y="720" as="geometry" />
         </mxCell>
-        <mxCell id="x21" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="helyrajzi_szam" vertex="1">
+        <mxCell id="x21" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="helyrajzi_szám" vertex="1">
           <mxGeometry height="70" width="136" x="1027" y="515" as="geometry" />
         </mxCell>
         <mxCell id="x22" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Terem" vertex="1">
           <mxGeometry height="60" width="150" x="1349" y="400" as="geometry" />
         </mxCell>
-        <mxCell id="x23" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="ultetett_fak_szama" vertex="1">
+        <mxCell id="x23" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="ültetett_fák_száma" vertex="1">
           <mxGeometry height="40" width="137" x="1223" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="1279.5" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x25" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;helyrajzi_szam&lt;/span&gt;" vertex="1">
+        <mxCell id="x25" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;helyrajzi_szám&lt;/span&gt;" vertex="1">
           <mxGeometry height="70" width="136" x="1376" y="515" as="geometry" />
         </mxCell>
         <mxCell id="x26" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;fajta_id&lt;/span&gt;" vertex="1">
           <mxGeometry height="70" width="97" x="1528" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x27" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Szuret" vertex="1">
+        <mxCell id="x27" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Szüret" vertex="1">
           <mxGeometry height="60" width="150" x="1953" y="400" as="geometry" />
         </mxCell>
-        <mxCell id="x28" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;helyrajzi_szam&lt;/span&gt;" vertex="1">
+        <mxCell id="x28" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;helyrajzi_szám&lt;/span&gt;" vertex="1">
           <mxGeometry height="70" width="136" x="1685" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x29" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="szuret_id" vertex="1">
+        <mxCell id="x29" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="szüret_id" vertex="1">
           <mxGeometry height="70" width="103" x="1837" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x30" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="datum" vertex="1">
+        <mxCell id="x30" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="dátum" vertex="1">
           <mxGeometry height="40" width="70" x="1956" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="1979" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x32" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="mennyiseg_kg" vertex="1">
+        <mxCell id="x32" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="mennyiség_kg" vertex="1">
           <mxGeometry height="40" width="97" x="2042" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
@@ -106,28 +106,28 @@
         <mxCell id="x34" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;fajta_id&lt;/span&gt;" vertex="1">
           <mxGeometry height="70" width="97" x="2155" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x35" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;raktar_id&lt;/span&gt;" vertex="1">
+        <mxCell id="x35" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;raktár_id&lt;/span&gt;" vertex="1">
           <mxGeometry height="70" width="103" x="2268" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x36" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Raktar" vertex="1">
+        <mxCell id="x36" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Raktár" vertex="1">
           <mxGeometry height="60" width="150" x="2583.5" y="400" as="geometry" />
         </mxCell>
-        <mxCell id="x37" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="raktar_id" vertex="1">
+        <mxCell id="x37" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="raktár_id" vertex="1">
           <mxGeometry height="70" width="103" x="2431" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x38" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="cim" vertex="1">
+        <mxCell id="x38" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="cím" vertex="1">
           <mxGeometry height="40" width="70" x="2550" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="2573" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x40" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="hutok_szama" vertex="1">
+        <mxCell id="x40" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="hűtők_száma" vertex="1">
           <mxGeometry height="40" width="91" x="2636" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="2669.5" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x42" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="befogadokepesseg_kg" vertex="1">
+        <mxCell id="x42" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="befogadóképesség_kg" vertex="1">
           <mxGeometry height="40" width="143" x="2743" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
@@ -139,43 +139,43 @@
         <mxCell id="x45" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="fajta_id" vertex="1">
           <mxGeometry height="70" width="97" x="2946" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x46" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="nev" vertex="1">
+        <mxCell id="x46" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="név" vertex="1">
           <mxGeometry height="40" width="70" x="3059" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="3082" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x48" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="eresi_ido" vertex="1">
+        <mxCell id="x48" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="érési_idő" vertex="1">
           <mxGeometry height="40" width="77" x="3145" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="3171.5" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x50" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Vasarlas" vertex="1">
+        <mxCell id="x50" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Vásárlás" vertex="1">
           <mxGeometry height="60" width="150" x="3657.5" y="400" as="geometry" />
         </mxCell>
-        <mxCell id="x51" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="vasarlas_id" vertex="1">
+        <mxCell id="x51" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="vásárlás_id" vertex="1">
           <mxGeometry height="70" width="117" x="3282" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x52" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="datum" vertex="1">
+        <mxCell id="x52" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="dátum" vertex="1">
           <mxGeometry height="40" width="70" x="3415" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="3438" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x54" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="mennyiseg_kg" vertex="1">
+        <mxCell id="x54" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="mennyiség_kg" vertex="1">
           <mxGeometry height="40" width="97" x="3501" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="3537.5" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x56" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="fizetett_osszeg" vertex="1">
+        <mxCell id="x56" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="fizetett_összeg" vertex="1">
           <mxGeometry height="40" width="117" x="3614" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="3660.5" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x58" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="egysegar" vertex="1">
+        <mxCell id="x58" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="egységár" vertex="1">
           <mxGeometry height="40" width="71" x="3747" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
@@ -184,19 +184,19 @@
         <mxCell id="x60" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;fajta_id&lt;/span&gt;" vertex="1">
           <mxGeometry height="70" width="97" x="3834" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x61" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;termelo_id&lt;/span&gt;" vertex="1">
+        <mxCell id="x61" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;termelő_id&lt;/span&gt;" vertex="1">
           <mxGeometry height="70" width="110" x="3947" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x62" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;vasarlo_id&lt;/span&gt;" vertex="1">
+        <mxCell id="x62" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="&lt;span style=&quot;text-decoration: underline dashed;&quot;&gt;vásárló_id&lt;/span&gt;" vertex="1">
           <mxGeometry height="70" width="110" x="4073" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x63" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Vasarlo" vertex="1">
+        <mxCell id="x63" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=12;" value="Vásárló" vertex="1">
           <mxGeometry height="60" width="150" x="4522" y="400" as="geometry" />
         </mxCell>
-        <mxCell id="x64" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="vasarlo_id" vertex="1">
+        <mxCell id="x64" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=4;fontSize=11;" value="vásárló_id" vertex="1">
           <mxGeometry height="70" width="110" x="4243" y="515" as="geometry" />
         </mxCell>
-        <mxCell id="x65" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="nev" vertex="1">
+        <mxCell id="x65" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="név" vertex="1">
           <mxGeometry height="40" width="70" x="4369" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
@@ -208,28 +208,28 @@
         <mxCell id="x68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="4478" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x69" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;" value="telefonszam" vertex="1">
+        <mxCell id="x69" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=11;" value="telefonszám" vertex="1">
           <mxGeometry height="40" width="91" x="4541" y="530" as="geometry" />
         </mxCell>
         <mxCell id="x70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="4574.5" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="x71" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="lakcim" vertex="1">
+        <mxCell id="x71" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="lakcím" vertex="1">
           <mxGeometry height="40" width="70" x="4764.5" y="530" as="geometry" />
         </mxCell>
-        <mxCell id="x72" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="iranyitoszam" vertex="1">
+        <mxCell id="x72" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="irányítószám" vertex="1">
           <mxGeometry height="40" width="97" x="4648" y="660" as="geometry" />
         </mxCell>
         <mxCell id="x73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="4684.5" y="720" as="geometry" />
         </mxCell>
-        <mxCell id="x74" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="telepules" vertex="1">
+        <mxCell id="x74" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="település" vertex="1">
           <mxGeometry height="40" width="77" x="4761" y="660" as="geometry" />
         </mxCell>
         <mxCell id="x75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">
           <mxGeometry height="30" width="24" x="4787.5" y="720" as="geometry" />
         </mxCell>
-        <mxCell id="x76" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="utca_hazszam" vertex="1">
+        <mxCell id="x76" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" value="utca_házszám" vertex="1">
           <mxGeometry height="40" width="97" x="4854" y="660" as="geometry" />
         </mxCell>
         <mxCell id="x77" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" value="" vertex="1">

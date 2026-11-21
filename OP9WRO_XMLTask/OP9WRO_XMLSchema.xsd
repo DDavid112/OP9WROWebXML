@@ -5,283 +5,289 @@
     <xs:element name="OP9WRO_barackos">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="Termelo" type="termeloTipus" maxOccurs="unbounded"/>
-                <xs:element name="Fold" type="foldTipus" maxOccurs="unbounded"/>
-                <xs:element name="Terem" type="teremTipus" maxOccurs="unbounded"/>
-                <xs:element name="Szuret" type="szuretTipus" maxOccurs="unbounded"/>
-                <xs:element name="Raktar" type="raktarTipus" maxOccurs="unbounded"/>
-                <xs:element name="Barackfajta" type="barackfajtaTipus" maxOccurs="unbounded"/>
-                <xs:element name="Vasarlas" type="vasarlasTipus" maxOccurs="unbounded"/>
-                <xs:element name="Vasarlo" type="vasarloTipus" maxOccurs="unbounded"/>
+                <xs:element name="Termelő" type="termelőTípus" maxOccurs="unbounded"/>
+                <xs:element name="Föld" type="földTípus" maxOccurs="unbounded"/>
+                <xs:element name="Terem" type="teremTípus" maxOccurs="unbounded"/>
+                <xs:element name="Szüret" type="szüretTípus" maxOccurs="unbounded"/>
+                <xs:element name="Raktár" type="raktárTípus" maxOccurs="unbounded"/>
+                <xs:element name="Barackfajta" type="barackfajtaTípus" maxOccurs="unbounded"/>
+                <xs:element name="Vásárlás" type="vásárlásTípus" maxOccurs="unbounded"/>
+                <xs:element name="Vásárló" type="vásárlóTípus" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
 
-        <xs:key name="termelo_kulcs">
-            <xs:selector xpath="Termelo"/>
-            <xs:field xpath="@termelo_id"/>
+        <!-- Elsődleges kulcsok -->
+        <xs:key name="termelő_kulcs">
+            <xs:selector xpath="Termelő"/>
+            <xs:field xpath="@termelő_id"/>
         </xs:key>
-        <xs:key name="fold_kulcs">
-            <xs:selector xpath="Fold"/>
-            <xs:field xpath="@helyrajzi_szam"/>
+        <xs:key name="föld_kulcs">
+            <xs:selector xpath="Föld"/>
+            <xs:field xpath="@helyrajzi_szám"/>
         </xs:key>
-        <xs:key name="szuret_kulcs">
-            <xs:selector xpath="Szuret"/>
-            <xs:field xpath="@szuret_id"/>
+        <xs:key name="szüret_kulcs">
+            <xs:selector xpath="Szüret"/>
+            <xs:field xpath="@szüret_id"/>
         </xs:key>
-        <xs:key name="raktar_kulcs">
-            <xs:selector xpath="Raktar"/>
-            <xs:field xpath="@raktar_id"/>
+        <xs:key name="raktár_kulcs">
+            <xs:selector xpath="Raktár"/>
+            <xs:field xpath="@raktár_id"/>
         </xs:key>
         <xs:key name="barackfajta_kulcs">
             <xs:selector xpath="Barackfajta"/>
             <xs:field xpath="@fajta_id"/>
         </xs:key>
-        <xs:key name="vasarlas_kulcs">
-            <xs:selector xpath="Vasarlas"/>
-            <xs:field xpath="@vasarlas_id"/>
+        <xs:key name="vásárlás_kulcs">
+            <xs:selector xpath="Vásárlás"/>
+            <xs:field xpath="@vásárlás_id"/>
         </xs:key>
-        <xs:key name="vasarlo_kulcs">
-            <xs:selector xpath="Vasarlo"/>
-            <xs:field xpath="@vasarlo_id"/>
+        <xs:key name="vásárló_kulcs">
+            <xs:selector xpath="Vásárló"/>
+            <xs:field xpath="@vásárló_id"/>
         </xs:key>
 
+        <!-- N:M kapcsolat összetett kulcsa -->
         <xs:key name="terem_kulcs">
             <xs:selector xpath="Terem"/>
-            <xs:field xpath="@helyrajzi_szam"/>
+            <xs:field xpath="@helyrajzi_szám"/>
             <xs:field xpath="@fajta_id"/>
         </xs:key>
 
-        <xs:keyref refer="termelo_kulcs" name="fold_termelo_idegen_kulcs">
-            <xs:selector xpath="Fold"/>
-            <xs:field xpath="@termelo_id"/>
+        <!-- Idegen kulcsok -->
+        <xs:keyref refer="termelő_kulcs" name="föld_termelő_idegen_kulcs">
+            <xs:selector xpath="Föld"/>
+            <xs:field xpath="@termelő_id"/>
         </xs:keyref>
 
-        <xs:keyref refer="fold_kulcs" name="terem_fold_idegen_kulcs">
+        <xs:keyref refer="föld_kulcs" name="terem_föld_idegen_kulcs">
             <xs:selector xpath="Terem"/>
-            <xs:field xpath="@helyrajzi_szam"/>
+            <xs:field xpath="@helyrajzi_szám"/>
         </xs:keyref>
         <xs:keyref refer="barackfajta_kulcs" name="terem_fajta_idegen_kulcs">
             <xs:selector xpath="Terem"/>
             <xs:field xpath="@fajta_id"/>
         </xs:keyref>
 
-        <xs:keyref refer="fold_kulcs" name="szuret_fold_idegen_kulcs">
-            <xs:selector xpath="Szuret"/>
-            <xs:field xpath="@helyrajzi_szam"/>
+        <xs:keyref refer="föld_kulcs" name="szüret_föld_idegen_kulcs">
+            <xs:selector xpath="Szüret"/>
+            <xs:field xpath="@helyrajzi_szám"/>
         </xs:keyref>
-        <xs:keyref refer="barackfajta_kulcs" name="szuret_fajta_idegen_kulcs">
-            <xs:selector xpath="Szuret"/>
+        <xs:keyref refer="barackfajta_kulcs" name="szüret_fajta_idegen_kulcs">
+            <xs:selector xpath="Szüret"/>
             <xs:field xpath="@fajta_id"/>
         </xs:keyref>
-        <xs:keyref refer="raktar_kulcs" name="szuret_raktar_idegen_kulcs">
-            <xs:selector xpath="Szuret"/>
-            <xs:field xpath="@raktar_id"/>
+        <xs:keyref refer="raktár_kulcs" name="szüret_raktár_idegen_kulcs">
+            <xs:selector xpath="Szüret"/>
+            <xs:field xpath="@raktár_id"/>
         </xs:keyref>
 
-        <xs:keyref refer="barackfajta_kulcs" name="vasarlas_fajta_idegen_kulcs">
-            <xs:selector xpath="Vasarlas"/>
+        <xs:keyref refer="barackfajta_kulcs" name="vásárlás_fajta_idegen_kulcs">
+            <xs:selector xpath="Vásárlás"/>
             <xs:field xpath="@fajta_id"/>
         </xs:keyref>
-        <xs:keyref refer="termelo_kulcs" name="vasarlas_termelo_idegen_kulcs">
-            <xs:selector xpath="Vasarlas"/>
-            <xs:field xpath="@termelo_id"/>
+        <xs:keyref refer="termelő_kulcs" name="vásárlás_termelő_idegen_kulcs">
+            <xs:selector xpath="Vásárlás"/>
+            <xs:field xpath="@termelő_id"/>
         </xs:keyref>
-        <xs:keyref refer="vasarlo_kulcs" name="vasarlas_vasarlo_idegen_kulcs">
-            <xs:selector xpath="Vasarlas"/>
-            <xs:field xpath="@vasarlo_id"/>
+        <xs:keyref refer="vásárló_kulcs" name="vásárlás_vásárló_idegen_kulcs">
+            <xs:selector xpath="Vásárlás"/>
+            <xs:field xpath="@vásárló_id"/>
         </xs:keyref>
     </xs:element>
 
-    <xs:element name="nev" type="xs:string"/>
-    <xs:element name="datum" type="xs:date"/>
-    <xs:element name="mennyiseg_kg" type="kgTipus"/>
-    <xs:element name="telefonszam" type="telefonTipus"/>
-    <xs:element name="email" type="emailTipus"/>
+    <!-- Közös (globális) elemek -->
+    <xs:element name="név" type="xs:string"/>
+    <xs:element name="dátum" type="xs:date"/>
+    <xs:element name="mennyiség_kg" type="kgTípus"/>
+    <xs:element name="telefonszám" type="telefonTípus"/>
+    <xs:element name="email" type="emailTípus"/>
 
-    <xs:complexType name="termeloTipus">
+    <!-- Komplex típusok -->
+    <xs:complexType name="termelőTípus">
         <xs:sequence>
-            <xs:element ref="nev"/>
-            <xs:element name="dolgozok_szama" type="xs:nonNegativeInteger"/>
-            <xs:element name="elerhetoseg" type="elerhetosegTipus"/>
+            <xs:element ref="név"/>
+            <xs:element name="dolgozók_száma" type="xs:nonNegativeInteger"/>
+            <xs:element name="elérhetőség" type="elérhetőségTípus"/>
         </xs:sequence>
-        <xs:attribute name="termelo_id" type="termeloIdTipus" use="required"/>
+        <xs:attribute name="termelő_id" type="termelőIdTípus" use="required"/>
     </xs:complexType>
 
-    <xs:complexType name="elerhetosegTipus">
+    <xs:complexType name="elérhetőségTípus">
         <xs:sequence>
-            <xs:element ref="telefonszam"/>
+            <xs:element ref="telefonszám"/>
             <xs:element ref="email"/>
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="foldTipus">
+    <xs:complexType name="földTípus">
         <xs:sequence>
-            <xs:element name="terulet_ha" type="teruletTipus"/>
-            <xs:element name="koordinatak" type="koordinatakTipus"/>
+            <xs:element name="terület_ha" type="területTípus"/>
+            <xs:element name="koordináták" type="koordinátákTípus"/>
         </xs:sequence>
-        <xs:attribute name="helyrajzi_szam" type="helyrajziSzamTipus" use="required"/>
-        <xs:attribute name="termelo_id" type="termeloIdTipus" use="required"/>
+        <xs:attribute name="helyrajzi_szám" type="helyrajziSzámTípus" use="required"/>
+        <xs:attribute name="termelő_id" type="termelőIdTípus" use="required"/>
     </xs:complexType>
 
-    <xs:complexType name="koordinatakTipus">
+    <xs:complexType name="koordinátákTípus">
         <xs:sequence>
-            <xs:element name="szelesseg" type="szelessegTipus"/>
-            <xs:element name="hosszusag" type="hosszusagTipus"/>
+            <xs:element name="szélesség" type="szélességTípus"/>
+            <xs:element name="hosszúság" type="hosszúságTípus"/>
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="teremTipus">
+    <xs:complexType name="teremTípus">
         <xs:sequence>
-            <xs:element name="ultetett_fak_szama" type="xs:positiveInteger"/>
+            <xs:element name="ültetett_fák_száma" type="xs:positiveInteger"/>
         </xs:sequence>
-        <xs:attribute name="helyrajzi_szam" type="helyrajziSzamTipus" use="required"/>
-        <xs:attribute name="fajta_id" type="fajtaIdTipus" use="required"/>
+        <xs:attribute name="helyrajzi_szám" type="helyrajziSzámTípus" use="required"/>
+        <xs:attribute name="fajta_id" type="fajtaIdTípus" use="required"/>
     </xs:complexType>
 
-    <xs:complexType name="szuretTipus">
+    <xs:complexType name="szüretTípus">
         <xs:sequence>
-            <xs:element ref="datum"/>
-            <xs:element ref="mennyiseg_kg"/>
+            <xs:element ref="dátum"/>
+            <xs:element ref="mennyiség_kg"/>
         </xs:sequence>
-        <xs:attribute name="szuret_id" type="szuretIdTipus" use="required"/>
-        <xs:attribute name="helyrajzi_szam" type="helyrajziSzamTipus" use="required"/>
-        <xs:attribute name="fajta_id" type="fajtaIdTipus" use="required"/>
-        <xs:attribute name="raktar_id" type="raktarIdTipus" use="required"/>
+        <xs:attribute name="szüret_id" type="szüretIdTípus" use="required"/>
+        <xs:attribute name="helyrajzi_szám" type="helyrajziSzámTípus" use="required"/>
+        <xs:attribute name="fajta_id" type="fajtaIdTípus" use="required"/>
+        <xs:attribute name="raktár_id" type="raktárIdTípus" use="required"/>
     </xs:complexType>
 
-    <xs:complexType name="raktarTipus">
+    <xs:complexType name="raktárTípus">
         <xs:sequence>
-            <xs:element name="cim" type="xs:string"/>
-            <xs:element name="hutok_szama" type="xs:nonNegativeInteger"/>
-            <xs:element name="befogadokepesseg_kg" type="kgTipus"/>
+            <xs:element name="cím" type="xs:string"/>
+            <xs:element name="hűtők_száma" type="xs:nonNegativeInteger"/>
+            <xs:element name="befogadóképesség_kg" type="kgTípus"/>
         </xs:sequence>
-        <xs:attribute name="raktar_id" type="raktarIdTipus" use="required"/>
+        <xs:attribute name="raktár_id" type="raktárIdTípus" use="required"/>
     </xs:complexType>
 
-    <xs:complexType name="barackfajtaTipus">
+    <xs:complexType name="barackfajtaTípus">
         <xs:all>
-            <xs:element ref="nev"/>
-            <xs:element name="eresi_ido" type="xs:string"/>
+            <xs:element ref="név"/>
+            <xs:element name="érési_idő" type="xs:string"/>
         </xs:all>
-        <xs:attribute name="fajta_id" type="fajtaIdTipus" use="required"/>
+        <xs:attribute name="fajta_id" type="fajtaIdTípus" use="required"/>
     </xs:complexType>
 
-    <xs:complexType name="vasarlasTipus">
+    <xs:complexType name="vásárlásTípus">
         <xs:sequence>
-            <xs:element ref="datum"/>
-            <xs:element ref="mennyiseg_kg"/>
-            <xs:element name="fizetett_osszeg" type="osszegTipus"/>
-            <xs:element name="egysegar" type="osszegTipus"/>
+            <xs:element ref="dátum"/>
+            <xs:element ref="mennyiség_kg"/>
+            <xs:element name="fizetett_összeg" type="összegTípus"/>
+            <xs:element name="egységár" type="összegTípus"/>
         </xs:sequence>
-        <xs:attribute name="vasarlas_id" type="vasarlasIdTipus" use="required"/>
-        <xs:attribute name="fajta_id" type="fajtaIdTipus" use="required"/>
-        <xs:attribute name="termelo_id" type="termeloIdTipus" use="required"/>
-        <xs:attribute name="vasarlo_id" type="vasarloIdTipus" use="required"/>
+        <xs:attribute name="vásárlás_id" type="vásárlásIdTípus" use="required"/>
+        <xs:attribute name="fajta_id" type="fajtaIdTípus" use="required"/>
+        <xs:attribute name="termelő_id" type="termelőIdTípus" use="required"/>
+        <xs:attribute name="vásárló_id" type="vásárlóIdTípus" use="required"/>
     </xs:complexType>
 
-    <xs:complexType name="vasarloTipus">
+    <xs:complexType name="vásárlóTípus">
         <xs:sequence>
-            <xs:element ref="nev"/>
+            <xs:element ref="név"/>
             <xs:element ref="email"/>
-            <xs:element ref="telefonszam" maxOccurs="unbounded"/>
-            <xs:element name="lakcim" type="lakcimTipus"/>
+            <xs:element ref="telefonszám" maxOccurs="unbounded"/>
+            <xs:element name="lakcím" type="lakcímTípus"/>
         </xs:sequence>
-        <xs:attribute name="vasarlo_id" type="vasarloIdTipus" use="required"/>
+        <xs:attribute name="vásárló_id" type="vásárlóIdTípus" use="required"/>
     </xs:complexType>
 
-    <xs:complexType name="lakcimTipus">
+    <xs:complexType name="lakcímTípus">
         <xs:sequence>
-            <xs:element name="iranyitoszam" type="iranyitoszamTipus"/>
-            <xs:element name="telepules" type="xs:string"/>
-            <xs:element name="utca_hazszam" type="xs:string"/>
+            <xs:element name="irányítószám" type="irányítószámTípus"/>
+            <xs:element name="település" type="xs:string"/>
+            <xs:element name="utca_házszám" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 
-    <xs:simpleType name="termeloIdTipus">
+    <!-- Egyszerű típusok -->
+    <xs:simpleType name="termelőIdTípus">
         <xs:restriction base="xs:string">
             <xs:pattern value="tr_\d{2}"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="szuretIdTipus">
+    <xs:simpleType name="szüretIdTípus">
         <xs:restriction base="xs:string">
             <xs:pattern value="sz_\d{2}"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="raktarIdTipus">
+    <xs:simpleType name="raktárIdTípus">
         <xs:restriction base="xs:string">
             <xs:pattern value="r_\d{2}"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="fajtaIdTipus">
+    <xs:simpleType name="fajtaIdTípus">
         <xs:restriction base="xs:string">
             <xs:pattern value="bf_\d{2}"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="vasarlasIdTipus">
+    <xs:simpleType name="vásárlásIdTípus">
         <xs:restriction base="xs:string">
             <xs:pattern value="va_\d{2}"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="vasarloIdTipus">
+    <xs:simpleType name="vásárlóIdTípus">
         <xs:restriction base="xs:string">
             <xs:pattern value="vo_\d{2}"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="helyrajziSzamTipus">
+    <xs:simpleType name="helyrajziSzámTípus">
         <xs:restriction base="xs:string">
             <xs:pattern value="\d{4}/\d+"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="kgTipus">
+    <xs:simpleType name="kgTípus">
         <xs:restriction base="xs:positiveInteger">
             <xs:maxInclusive value="1000000"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="osszegTipus">
+    <xs:simpleType name="összegTípus">
         <xs:restriction base="xs:nonNegativeInteger"/>
     </xs:simpleType>
 
-    <xs:simpleType name="teruletTipus">
+    <xs:simpleType name="területTípus">
         <xs:restriction base="xs:decimal">
             <xs:minExclusive value="0"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="szelessegTipus">
+    <xs:simpleType name="szélességTípus">
         <xs:restriction base="xs:decimal">
-            <xs:minInclusive value="-100"/>
-            <xs:maxInclusive value="100"/>
+            <xs:minInclusive value="-90"/>
+            <xs:maxInclusive value="90"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="hosszusagTipus">
+    <xs:simpleType name="hosszúságTípus">
         <xs:restriction base="xs:decimal">
-            <xs:minInclusive value="-100"/>
-            <xs:maxInclusive value="100"/>
+            <xs:minInclusive value="-180"/>
+            <xs:maxInclusive value="180"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="telefonTipus">
+    <xs:simpleType name="telefonTípus">
         <xs:restriction base="xs:string">
             <xs:pattern value="\+36 \d{2} \d{3} \d{3,4}"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="emailTipus">
+    <xs:simpleType name="emailTípus">
         <xs:restriction base="xs:string">
             <xs:pattern value="[^@\s]+@[^@\s]+\.[a-z]{2,}"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="iranyitoszamTipus">
+    <xs:simpleType name="irányítószámTípus">
         <xs:restriction base="xs:string">
             <xs:pattern value="\d{4}"/>
         </xs:restriction>
