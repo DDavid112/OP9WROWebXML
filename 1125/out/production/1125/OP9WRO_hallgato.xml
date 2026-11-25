@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type= "text/xsl" href = "OP9WRO_hallgato.xsl"?>
+
+
+<class>
+        <student id = "01">
+            <vezeteknev>Fekete</vezeteknev>
+            <keresztnev>Peter</keresztnev>
+            <Becenev>Petya</Becenev>
+            <kor>22</kor>
+        </student>
+    <student id = "02">
+        <vezeteknev>Kek</vezeteknev>
+        <keresztnev>Dorka</keresztnev>
+        <Becenev>Dotyesz</Becenev>
+        <kor>23</kor>
+    </student>
+    <student id = "03">
+        <vezeteknev>Zsoldos</vezeteknev>
+        <keresztnev>Adnras</keresztnev>
+        <Becenev>Bandi</Becenev>
+        <kor>21</kor>
+    </student>
+
+</class>
